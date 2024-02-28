@@ -49,7 +49,7 @@
                     <table class="table table-striped table-hover w-100">
                         <thead>
                         <tr>
-                            <th scope="col">
+                            <th>
                                 <div class='d-flex flex-row justify-content-center'>
                                     #
                                 </div>
@@ -129,6 +129,11 @@
                 </div>
             </div>
             @endfor
+            <div class="d-flex flex-row mt-5 w-75">
+                <div class="d-flex flex-row p-5 w-100" style='background-color:rgba(69, 166, 235, 0.16)'>
+                    Общая стоимость: {{ $price_all }}
+                </div>
+            </div>
             @else
             <div class="d-flex flex-row justify-content-center w-75" style='background-color:rgba(211, 193, 191, 0.16)'>
                 <h2 class="">Заказов нет</h2>

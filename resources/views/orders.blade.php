@@ -45,7 +45,8 @@
             @for ($numCurOrder = 0; $numCurOrder < count($orders); $numCurOrder++)
             <div class="col-auto w-75">
                 <div>
-                    <div>Номер заказа: {{ $orders[$numCurOrder]['id'] }}</div>
+                    <div class='m-1'>Номер заказа: {{ $orders[$numCurOrder]['id'] }}</div>
+                    <div class='m-1'>Дата: {{ $orders[$numCurOrder]['date'] }}</div>
                     <table class="table table-striped table-hover w-100">
                         <thead>
                         <tr>

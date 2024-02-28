@@ -24,6 +24,7 @@ class GetOrders
         {
             $addItemsList = [
                 'id' => $curItemOrder->id,
+                'date' => date('d-m-Y H:i:s', strtotime($curItemOrder->created_at)),
                 'price_all' => 0,
                 'items' => [],
             ];
